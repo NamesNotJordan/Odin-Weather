@@ -9,11 +9,16 @@
 </head>
 <body>
     <div class="main">
-        <form action="">
-            <label for="city-input"></label>
+        <form id="weather-form" action="">
+            <label for="city-input">City</label>
             <input id="city-input" type="text">
             <button type="submit">Get Forecast</button>
         </form>
+    </div>
+    <div id="forecast">
+        <h2 id="forecast-heading"></h2>
+        <p id="temperature-text"></p>
+        <p id="condition-text"></p>
     </div>
 </body>
 </html>

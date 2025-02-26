@@ -1,0 +1,20 @@
+body {
+
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem ;
+}
+label {
+    font-size: 1.5rem;
+}
+#city-input {
+    width: 60%;
+    height: 2rem;
+    margin: 10px;
+}
+#forecast {
+    display: none;
+}
