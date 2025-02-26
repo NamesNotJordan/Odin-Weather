@@ -17,4 +17,5 @@ label {
 }
 #forecast {
     display: none;
+    flex-direction: column;
 }
