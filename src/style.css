@@ -79,10 +79,17 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
+    margin: 5px;
+}
+#temp-unit-radio-group label {
+    margin: 0 2px;
 }
 #temp-unit-radio-group label[for="celsius"] {
     margin-right: 2rem;
+}
+input[type="radio"] {
+    height: 15px;
+    
 }
 #forecast {
     display: none;
