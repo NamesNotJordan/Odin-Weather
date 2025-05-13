@@ -25,10 +25,15 @@ function renderCurrentForecast(weatherData) {
     const conditionText = document.getElementById("condition-text");
 
     const address = weatherData.resolvedAddress;
-    let temperature = weatherData.currentConditions.temp;
-    const conditions = weatherData.currentConditions.conditions;
-    let icon = weatherData.currentConditions.icon;
-
+    let temperature = weatherData.days[0].temp;
+    let conditions = weatherData.days[0].conditions;
+    let icon = weatherData.days[0].icon;
+    if (weatherData.currentConditions) {
+        temperature = weatherData.currentConditions.temp;
+        conditions = weatherData.currentConditions.conditions;
+        icon = weatherData.currentConditions.icon;
+    }
+    
     forecastHeading.innerHTML = `<span>Forecast for</span> \n${address}`;
     temperatureText.innerHTML = `${temperature}°${getTempuratureUnit()}`;
     conditionText.innerHTML = conditions;
