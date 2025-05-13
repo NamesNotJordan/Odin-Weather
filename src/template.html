@@ -10,15 +10,22 @@
 <body>
     <div class="main">
         <form id="weather-form" action="">
-            <label for="city-input">City</label>
-            <input id="city-input" type="text">
+            <input id="city-input" type="text" placeholder="Enter city name" required>
+            <div id="temp-unit-radio-group">
+                <input type="radio" name="temp-unit" id="celsius" value="metric" checked>
+                <label for="celsius">Celsius</label>
+                <input type="radio" name="temp-unit" id="fahrenheit" value="us">
+                <label for="fahrenheit">Fahrenheit</label>
+            </div>
             <button type="submit">Get Forecast</button>
         </form>
+        <div id="forecast">
+            <h2 id="forecast-heading"></h2>
+            <img src="./assets/Weather-Icons/clear-day.svg" alt="clear-day" id="weather-icon">
+            <p id="temperature-text"></p>
+            <p id="condition-text"></p>
+        </div>
     </div>
-    <div id="forecast">
-        <h2 id="forecast-heading"></h2>
-        <p id="temperature-text"></p>
-        <p id="condition-text"></p>
-    </div>
+    
 </body>
 </html>
